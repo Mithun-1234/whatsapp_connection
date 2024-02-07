@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp Chat Button</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f5f5f5;
+    }
+
+    #whatsapp-chat-button {
+        background-color: #25d366;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    #whatsapp-chat-button:hover {
+        background-color: #128c7e;
+    }
+</style>
+</head>
+<body>
+
+<button id="whatsapp-chat-button">Chat on WhatsApp</button>
+
+<script>
+    document.getElementById("whatsapp-chat-button").onclick = function() {
+        var phoneNumber = '6382088440'; // Replace 'XXXXXXXXXXXX' with the recipient's phone number including the country code
+        var whatsappLink = 'https://wa.me/' + phoneNumber;
+        window.location.href = whatsappLink;
+    };
+</script>
+
+</body>
+</html>
